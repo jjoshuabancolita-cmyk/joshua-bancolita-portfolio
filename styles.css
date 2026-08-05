@@ -730,6 +730,11 @@ a { color: inherit; }
   color: var(--text-main);
 }
 
+/* Ensure skills grid collapses to one column on small screens (override ordering) */
+@media (max-width: 720px) {
+  .skills-grid { grid-template-columns: 1fr !important; }
+}
+
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 .project-card { padding: 1rem; display: flex; flex-direction: column; gap: 1.25rem; }
 .project-image {
