@@ -37,6 +37,47 @@
   --header-bg: rgba(248, 250, 252, 0.95);
 }
 
+[data-theme="dark"] {
+  --bg-main: #04060f;
+  --bg-gradient-1: #0c1020;
+  --surface: rgba(8, 12, 22, 0.96);
+  --surface-hover: rgba(255, 255, 255, 0.12);
+  --border: rgba(255, 255, 255, 0.18);
+  --text-main: #f8fafc;
+  --text-muted: #d1d5db;
+  --heading-color: #ffffff;
+  --header-bg: rgba(8, 10, 16, 0.96);
+}
+
+[data-theme="dark"] body,
+[data-theme="dark"] .hero,
+[data-theme="dark"] .section,
+[data-theme="dark"] .glass-card,
+[data-theme="dark"] .feature-card,
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .contact-form,
+[data-theme="dark"] .skill-card,
+[data-theme="dark"] .hero-visual .card-highlights {
+  background: rgba(8, 12, 22, 0.98);
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .hero-text,
+[data-theme="dark"] .about-copy p,
+[data-theme="dark"] .project-info p,
+[data-theme="dark"] .info-block a,
+[data-theme="dark"] .site-footer p,
+[data-theme="dark"] .highlight-item span,
+[data-theme="dark"] .project-tags span,
+[data-theme="dark"] .skill-tags span,
+[data-theme="dark"] .form-group label,
+[data-theme="dark"] .form-status,
+[data-theme="dark"] .nav-menu a,
+[data-theme="dark"] .section-head h2 {
+  color: #f8fafc !important;
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
 body {
