@@ -49,7 +49,8 @@ themeToggle?.addEventListener('click', () => {
 const header = document.querySelector('.site-header');
 const updateHeaderOnScroll = () => {
   if (!header) return;
-  header.classList.toggle('scrolled', window.scrollY > 16);
+  // Keep header visually transparent on scroll — do not add the `scrolled` class.
+  header.classList.remove('scrolled');
 };
 window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
 updateHeaderOnScroll();
