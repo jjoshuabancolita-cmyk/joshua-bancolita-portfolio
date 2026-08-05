@@ -735,7 +735,7 @@ a { color: inherit; }
   .skills-grid { grid-template-columns: 1fr !important; width: 100% !important; }
   .skill-card { width: 100% !important; }
   .section-head, .section-head h2 { width: 100% !important; }
-  .bg-shape-2 { right: -20% !important; }
+  .bg-shape-2 { display: none !important; }
 }
 
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
