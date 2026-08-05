@@ -46,6 +46,14 @@ themeToggle?.addEventListener('click', () => {
   localStorage.setItem('theme', newTheme);
 });
 
+const header = document.querySelector('.site-header');
+const updateHeaderOnScroll = () => {
+  if (!header) return;
+  header.classList.toggle('scrolled', window.scrollY > 16);
+};
+window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
+updateHeaderOnScroll();
+
 const revealElements = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
