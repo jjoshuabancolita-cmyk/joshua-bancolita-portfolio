@@ -182,7 +182,7 @@ a { color: inherit; }
   letter-spacing: -0.02em;
 }
 /* Inset brand slightly from the left edge for balanced appearance */
-.brand { margin-left: 8px; }
+.brand { margin-left: 8px !important; }
 .brand span { color: var(--primary); }
 .header-actions { display: flex; align-items: center; gap: 1.25rem; }
 .nav-menu { display: flex; align-items: center; gap: 1.75rem; }
@@ -210,7 +210,7 @@ a { color: inherit; }
   position: relative;
   overflow: hidden;
 }
-.theme-toggle { margin-right: 8px; }
+.theme-toggle { margin-right: 8px !important; }
 .theme-toggle:hover { background: var(--surface-hover); transform: scale(1.05); }
 .sun-icon, .moon-icon { position: absolute; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 [data-theme="dark"] .sun-icon { transform: translateY(0) rotate(0); opacity: 1; }
