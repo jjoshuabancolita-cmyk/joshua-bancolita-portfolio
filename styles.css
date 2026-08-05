@@ -732,7 +732,9 @@ a { color: inherit; }
 
 /* Ensure skills grid collapses to one column on small screens (override ordering) */
 @media (max-width: 720px) {
-  .skills-grid { grid-template-columns: 1fr !important; }
+  .skills-grid { grid-template-columns: 1fr !important; width: 100% !important; }
+  .skill-card { width: 100% !important; }
+  .section-head, .section-head h2 { width: 100% !important; }
 }
 
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
