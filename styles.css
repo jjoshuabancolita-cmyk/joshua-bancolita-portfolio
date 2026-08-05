@@ -97,7 +97,7 @@ body {
   background: transparent;
   transition: background-color 0.4s ease, color 0.4s ease;
   line-height: 1.7;
-  padding-top: 4.5rem;
+  padding-top: calc(4.5rem + env(safe-area-inset-top, 0));
 }
 body.menu-open { overflow: hidden; }
 
@@ -146,7 +146,7 @@ a { color: inherit; }
 
 .site-header {
   position: fixed;
-  top: 0;
+  top: env(safe-area-inset-top, 0);
   left: 0;
   right: 0;
   width: 100%;
