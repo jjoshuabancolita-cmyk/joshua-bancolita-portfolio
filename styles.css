@@ -784,4 +784,29 @@ a { color: inherit; }
   .hero h1 { font-size: 2.5rem; }
   .contact-form { padding: 1.25rem; }
   .header-inner { padding: 0.9rem 0; }
+
+  [data-theme="dark"] body,
+  [data-theme="dark"] .hero,
+  [data-theme="dark"] .section,
+  [data-theme="dark"] .glass-card,
+  [data-theme="dark"] .feature-card,
+  [data-theme="dark"] .service-card,
+  [data-theme="dark"] .project-card,
+  [data-theme="dark"] .contact-form,
+  [data-theme="dark"] .skill-card,
+  [data-theme="dark"] .hero-visual .card-highlights,
+  [data-theme="dark"] .nav-menu,
+  [data-theme="dark"] .site-footer {
+    background: #000000 !important;
+    color: #f8fafc !important;
+    border-color: rgba(255,255,255,0.12) !important;
+  }
+  [data-theme="dark"] .info-block a,
+  [data-theme="dark"] .project-info p,
+  [data-theme="dark"] .hero-text,
+  [data-theme="dark"] .highlight-item span,
+  [data-theme="dark"] .site-footer p,
+  [data-theme="dark"] .nav-menu a {
+    color: #f8fafc !important;
+  }
 }
